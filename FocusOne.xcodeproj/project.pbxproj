@@ -6,30 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3FAC07942E8D2DE500B915B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC078D2E8D2DE500B915B2 /* Assets.xcassets */; };
+		3FAC07962E8D2DE500B915B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC078E2E8D2DE500B915B2 /* ContentView.swift */; };
+		3FAC07972E8D2DE500B915B2 /* FocusOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC07902E8D2DE500B915B2 /* FocusOneApp.swift */; };
+		3FAC07982E8D2DE500B915B2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC07922E8D2DE500B915B2 /* Item.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3FAC077A2E8D2DDD00B915B2 /* FocusOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAC078D2E8D2DE500B915B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FAC078E2E8D2DE500B915B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FAC078F2E8D2DE500B915B2 /* FocusOne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FocusOne.entitlements; sourceTree = "<group>"; };
+		3FAC07902E8D2DE500B915B2 /* FocusOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusOneApp.swift; sourceTree = "<group>"; };
+		3FAC07912E8D2DE500B915B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FAC07922E8D2DE500B915B2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3FAC07872E8D2DDE00B915B2 /* Exceptions for "FocusOne" folder in "FocusOne" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 3FAC07792E8D2DDD00B915B2 /* FocusOne */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		3FAC077C2E8D2DDD00B915B2 /* FocusOne */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3FAC07872E8D2DDE00B915B2 /* Exceptions for "FocusOne" folder in "FocusOne" target */,
-			);
-			path = FocusOne;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3FAC07772E8D2DDD00B915B2 /* Frameworks */ = {
@@ -45,7 +37,7 @@
 		3FAC07712E8D2DDD00B915B2 = {
 			isa = PBXGroup;
 			children = (
-				3FAC077C2E8D2DDD00B915B2 /* FocusOne */,
+				3FAC07932E8D2DE500B915B2 /* FocusOne */,
 				3FAC077B2E8D2DDD00B915B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +48,19 @@
 				3FAC077A2E8D2DDD00B915B2 /* FocusOne.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3FAC07932E8D2DE500B915B2 /* FocusOne */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC07902E8D2DE500B915B2 /* FocusOneApp.swift */,
+				3FAC078E2E8D2DE500B915B2 /* ContentView.swift */,
+				3FAC07922E8D2DE500B915B2 /* Item.swift */,
+				3FAC078D2E8D2DE500B915B2 /* Assets.xcassets */,
+				3FAC07912E8D2DE500B915B2 /* Info.plist */,
+				3FAC078F2E8D2DE500B915B2 /* FocusOne.entitlements */,
+			);
+			path = FocusOne;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +77,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				3FAC077C2E8D2DDD00B915B2 /* FocusOne */,
 			);
 			name = FocusOne;
 			packageProductDependencies = (
@@ -122,6 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FAC07942E8D2DE500B915B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +135,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FAC07962E8D2DE500B915B2 /* ContentView.swift in Sources */,
+				3FAC07972E8D2DE500B915B2 /* FocusOneApp.swift in Sources */,
+				3FAC07982E8D2DE500B915B2 /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +157,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FocusOne/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -191,6 +198,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FocusOne/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
