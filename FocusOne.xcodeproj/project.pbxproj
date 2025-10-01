@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		3FAC07942E8D2DE500B915B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC078D2E8D2DE500B915B2 /* Assets.xcassets */; };
-		3FAC07962E8D2DE500B915B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC078E2E8D2DE500B915B2 /* ContentView.swift */; };
 		3FAC07972E8D2DE500B915B2 /* FocusOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC07902E8D2DE500B915B2 /* FocusOneApp.swift */; };
-		3FAC07982E8D2DE500B915B2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC07922E8D2DE500B915B2 /* Item.swift */; };
+		3FAC079C2E8D2E8900B915B2 /* FocusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC079B2E8D2E8900B915B2 /* FocusItem.swift */; };
+		3FAC079E2E8D307F00B915B2 /* FocusSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC079D2E8D307F00B915B2 /* FocusSession.swift */; };
+		3FAC07A12E8D325A00B915B2 /* FocusItemCreationWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC07A02E8D325A00B915B2 /* FocusItemCreationWindow.swift */; };
+		3FAC07A62E8D32A600B915B2 /* SoftPillButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC07A52E8D32A600B915B2 /* SoftPillButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FAC077A2E8D2DDD00B915B2 /* FocusOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAC078D2E8D2DE500B915B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3FAC078E2E8D2DE500B915B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FAC078F2E8D2DE500B915B2 /* FocusOne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FocusOne.entitlements; sourceTree = "<group>"; };
 		3FAC07902E8D2DE500B915B2 /* FocusOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusOneApp.swift; sourceTree = "<group>"; };
 		3FAC07912E8D2DE500B915B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FAC07922E8D2DE500B915B2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3FAC079B2E8D2E8900B915B2 /* FocusItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusItem.swift; sourceTree = "<group>"; };
+		3FAC079D2E8D307F00B915B2 /* FocusSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSession.swift; sourceTree = "<group>"; };
+		3FAC07A02E8D325A00B915B2 /* FocusItemCreationWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusItemCreationWindow.swift; sourceTree = "<group>"; };
+		3FAC07A52E8D32A600B915B2 /* SoftPillButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftPillButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +57,48 @@
 		3FAC07932E8D2DE500B915B2 /* FocusOne */ = {
 			isa = PBXGroup;
 			children = (
+				3FAC079A2E8D2E8100B915B2 /* Shared */,
+				3FAC079F2E8D323B00B915B2 /* macOS */,
 				3FAC07902E8D2DE500B915B2 /* FocusOneApp.swift */,
-				3FAC078E2E8D2DE500B915B2 /* ContentView.swift */,
-				3FAC07922E8D2DE500B915B2 /* Item.swift */,
 				3FAC078D2E8D2DE500B915B2 /* Assets.xcassets */,
 				3FAC07912E8D2DE500B915B2 /* Info.plist */,
 				3FAC078F2E8D2DE500B915B2 /* FocusOne.entitlements */,
 			);
 			path = FocusOne;
+			sourceTree = "<group>";
+		};
+		3FAC079A2E8D2E8100B915B2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC07A22E8D327700B915B2 /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3FAC079F2E8D323B00B915B2 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC07A42E8D32A100B915B2 /* Shared */,
+				3FAC07A02E8D325A00B915B2 /* FocusItemCreationWindow.swift */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		3FAC07A22E8D327700B915B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC079B2E8D2E8900B915B2 /* FocusItem.swift */,
+				3FAC079D2E8D307F00B915B2 /* FocusSession.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3FAC07A42E8D32A100B915B2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC07A52E8D32A600B915B2 /* SoftPillButtonStyle.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FAC07962E8D2DE500B915B2 /* ContentView.swift in Sources */,
+				3FAC07A62E8D32A600B915B2 /* SoftPillButtonStyle.swift in Sources */,
+				3FAC079E2E8D307F00B915B2 /* FocusSession.swift in Sources */,
+				3FAC07A12E8D325A00B915B2 /* FocusItemCreationWindow.swift in Sources */,
+				3FAC079C2E8D2E8900B915B2 /* FocusItem.swift in Sources */,
 				3FAC07972E8D2DE500B915B2 /* FocusOneApp.swift in Sources */,
-				3FAC07982E8D2DE500B915B2 /* Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
